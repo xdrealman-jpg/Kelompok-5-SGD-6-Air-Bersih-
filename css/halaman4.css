@@ -1017,36 +1017,7 @@ nav ul li a.active {
     transform: translateY(-2px);
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
 
-.site-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 28px 6%;
-    text-align: center;
-    background: #f1f8fc;
-    border-top: 1px solid var(--border);
-}
-
-.footer-logo {
-    color: var(--navy);
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.site-footer p {
-    margin: 5px 0 9px;
-    color: var(--muted);
-    font-size: 11px;
-}
-
-.site-footer small {
-    color: #8493a5;
-    font-size: 9px;
-}
 
 /* ==========================================
    RESPONSIVE TABLET

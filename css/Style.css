@@ -141,6 +141,20 @@ header.sticky nav ul li a.active {
     z-index: 0;
 }
 
+/* BACKGROUND VIDEO & OVERLAY */
+.full-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
 /* Lapisan gelap di atas video */
 
 .overlay {
@@ -657,6 +671,32 @@ header.sticky nav ul li a.active {
 
     font-size:20px;
 
+}
+
+/* FOOTER */
+
+.site-footer {
+    padding: 35px 20px;
+    color: #fff;
+    background: #102b53;
+    text-align: center;
+}
+
+.footer-brand {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.site-footer p {
+    margin-bottom: 6px;
+    color: #e2eff9;
+}
+
+.site-footer small {
+    color: #b8cce0;
+    font-size: 12px;
 }
 
 

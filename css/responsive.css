@@ -64,21 +64,6 @@
     }
 
     /* =========================
-      heroo
-    ==========================*/
-    .heroo{
-        min-height: 100%;
-        height: auto;
-        padding-top: 100px;
-        padding-bottom: 50px;
-    }
-
-    .heroo video{
-        height: 100%;
-        min-height: 100%;
-    }
-
-    /* =========================
        INFO SECTION
     ========================= */
 

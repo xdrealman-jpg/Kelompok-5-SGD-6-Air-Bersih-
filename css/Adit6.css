@@ -341,32 +341,6 @@ body {
     margin: 0 auto;
 }
 
-/* --- FOOTER --- */
-.site-footer {
-    text-align: center;
-    padding: 40px 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    margin-top: 40px;
-}
-
-.footer-logo {
-    font-size: 20px;
-    font-weight: 700;
-    color: #0f2b48;
-    text-decoration: none;
-}
-
-.site-footer p {
-    font-size: 13px;
-    color: #475569;
-    margin: 6px 0;
-}
-
-.site-footer small {
-    font-size: 11px;
-    color: #64748b;
-}
-
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
     .hero-section {

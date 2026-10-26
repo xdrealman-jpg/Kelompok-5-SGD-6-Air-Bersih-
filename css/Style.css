@@ -659,8 +659,9 @@ header.sticky nav ul li a.active {
 
 }
 
-/* FOOTER */
-
+/* =========================
+   FOOTER
+========================= */
 .site-footer {
     padding: 35px 20px;
     color: #fff;

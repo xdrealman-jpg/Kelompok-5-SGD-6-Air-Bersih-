@@ -1,3 +1,8 @@
+/* ==========================================================
+   CSS HALAMAN 6 - ADIT6.CSS
+   Semua pengaturan Navbar diserahkan penuh ke halman-2.css
+   ========================================================== */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,12 +12,12 @@
 
 body {
     position: relative;
-    color: #1e293b;
+    color: #0f172a;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-/* FULL PAGE BACKGROUND VIDEO */
+/* BACKGROUND VIDEO & OVERLAY */
 .full-bg-video {
     position: fixed;
     top: 50%;
@@ -32,246 +37,200 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(240, 246, 252, 0.45);
+    backdrop-filter: blur(4px);
     z-index: -1;
 }
 
-.container {
+.main-wrapper {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0 20px 60px 20px;
-}
-
-.main-content {
+    padding: 20px 20px 60px 20px;
     position: relative;
     z-index: 1;
 }
 
-/* NAVBAR TIPIPI & TRANSPARAN */
-header {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 4px 0; /* Ditipiskan */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-}
-
-.nav-container {
+/* --- HERO SECTION --- */
+.hero-section {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    min-height: 40px; /* Ditipiskan */
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.hero-left {
+    flex: 1.2;
 }
 
-.brand i {
-    font-size: 22px;
-    color: #0084ff;
-}
-
-.brand-text h2 {
-    font-size: 16px;
-    color: #0f2b48;
-    font-weight: 700;
-    line-height: 1;
-}
-
-.brand-text p {
-    font-size: 9.5px;
-    color: #475569;
-    line-height: 1;
-}
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 6px;
-    align-items: center;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #0f2b48;
-    font-weight: 600;
-    font-size: 12.5px;
-    padding: 5px 12px;
-    border-radius: 20px;
-    transition: all 0.25s ease-in-out;
-}
-
-.nav-menu a:hover {
-    background: rgba(255, 255, 255, 0.4);
-    color: #0084ff;
-}
-
-.nav-menu a.active {
-    background: rgba(0, 132, 255, 0.2);
-    color: #0084ff;
-    border: 1px solid rgba(0, 132, 255, 0.35);
-}
-
-/* HERO SECTION KACA */
-.action-hero {
-    background: rgba(15, 43, 72, 0.65);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 24px;
-    margin-top: 25px;
-    padding: 45px 35px;
-    color: #ffffff;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-.action-hero-content {
-    max-width: 750px;
-}
-
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(8px);
-    padding: 6px 16px;
-    border-radius: 30px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.action-hero h1 {
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 12px;
-}
-
-.action-hero h1 span {
-    color: #90e0ef;
-}
-
-.action-hero p {
-    font-size: 14px;
-    line-height: 1.7;
-    color: #f1f5f9;
-}
-
-/* QUOTE CARD KACA */
-.quote-card {
-    position: relative;
-    background: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 20px;
-    padding: 25px 30px;
-    margin-top: -20px;
-    margin-bottom: 35px;
-    z-index: 3;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-left: 6px solid #0084ff;
-    overflow: hidden;
-}
-
-.quote-icon-bg {
-    position: absolute;
-    right: 20px;
-    bottom: -10px;
-    font-size: 100px;
-    color: rgba(0, 132, 255, 0.1);
-    z-index: 1;
-}
-
-.quote-card p {
-    position: relative;
-    z-index: 2;
-    font-size: 14px;
-    font-style: italic;
-    color: #0f2b48;
-    font-weight: 500;
-    line-height: 1.8;
-}
-
-/* SECTION HEADERS */
-.points-section {
-    margin-top: 20px;
-}
-
-.section-header-center {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.section-header-center .sub-title {
-    font-size: 12px;
+.eyebrow {
+    font-size: 11.5px;
     font-weight: 700;
     color: #0084ff;
     letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    display: inline-block;
 }
 
-.section-header-center h2 {
-    font-size: 24px;
+.hero-left h1 {
+    font-size: 38px;
     color: #0f2b48;
     font-weight: 700;
-    margin-top: 4px;
+    line-height: 1.2;
+    margin-bottom: 16px;
 }
 
-.section-header-center h2 span {
+.highlight-text {
     color: #0084ff;
 }
 
-.title-line {
-    width: 60px;
-    height: 4px;
-    background: #0084ff;
-    margin: 8px auto 0 auto;
-    border-radius: 2px;
+.hero-left p {
+    font-size: 14.5px;
+    color: #334155;
+    margin-bottom: 24px;
+    max-width: 540px;
 }
 
-/* GRID CARDS KACA */
-.points-grid {
+.btn-primary {
+    display: inline-block;
+    background: #0084ff;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 13.5px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 132, 255, 0.25);
+    transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+    background: #0066cc;
+    transform: translateY(-2px);
+}
+
+.hero-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    padding: 12px 18px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 460px;
+}
+
+.note-icon {
+    font-size: 20px;
+}
+
+.hero-note strong {
+    display: block;
+    font-size: 12.5px;
+    color: #0f2b48;
+}
+
+.hero-note small {
+    font-size: 11px;
+    color: #64748b;
+}
+
+.hero-right {
+    flex: 0.9;
+}
+
+.quote-card-hero {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: 5px solid #0084ff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.quote-badge {
+    font-size: 11px;
+    font-weight: 700;
+    color: #0084ff;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.quote-card-hero p {
+    font-size: 14.5px;
+    font-style: italic;
+    color: #1e293b;
+    line-height: 1.8;
+}
+
+/* --- SECTION HEADINGS --- */
+.content-section {
+    margin-bottom: 50px;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading.text-center {
+    text-align: center;
+}
+
+.section-label {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #0084ff;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.section-heading h2 {
+    font-size: 26px;
+    color: #0f2b48;
+    font-weight: 700;
+}
+
+.section-heading p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* --- CARDS GRID (AKSI UTAMA) --- */
+.cards-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.point-card {
-    background: rgba(255, 255, 255, 0.35);
+.action-card {
+    background: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 18px;
-    padding: 24px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
 }
 
-.point-card:hover {
+.action-card:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 12px 30px rgba(0, 132, 255, 0.15);
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 12px 30px rgba(0, 132, 255, 0.12);
 }
 
-.card-head {
+.card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
-.icon-box {
+.card-icon {
     width: 44px;
     height: 44px;
     border-radius: 12px;
@@ -281,57 +240,142 @@ header {
     font-size: 18px;
 }
 
-.card-number {
-    font-size: 16px;
+.color-blue .card-icon { background: rgba(0, 132, 255, 0.15); color: #0084ff; }
+.color-teal .card-icon { background: rgba(0, 180, 216, 0.15); color: #00b4d8; }
+.color-red .card-icon { background: rgba(229, 62, 62, 0.15); color: #e53e3e; }
+.color-yellow .card-icon { background: rgba(217, 119, 6, 0.15); color: #d97706; }
+
+.card-num {
+    font-size: 18px;
     font-weight: 700;
     color: #0f2b48;
-    opacity: 0.3;
+    opacity: 0.25;
 }
 
-.point-card h3 {
-    font-size: 16px;
+.action-card h3 {
+    font-size: 16.5px;
     color: #0f2b48;
-    margin-bottom: 10px;
     font-weight: 700;
+    margin-bottom: 12px;
 }
 
-.card-list {
+.action-list {
     list-style-type: disc;
-    padding-left: 18px;
+    padding-left: 20px;
 }
 
-.card-list li {
-    font-size: 13px;
-    color: #1e293b;
-    font-weight: 500;
-    margin-bottom: 6px;
+.action-list li {
+    font-size: 13.5px;
+    color: #334155;
+    margin-bottom: 8px;
     line-height: 1.6;
 }
 
-.color-1 .icon-box { background: rgba(0, 132, 255, 0.2); color: #0084ff; }
-.color-2 .icon-box { background: rgba(0, 180, 216, 0.2); color: #00b4d8; }
-.color-3 .icon-box { background: rgba(229, 62, 62, 0.2); color: #e53e3e; }
-.color-4 .icon-box { background: rgba(22, 163, 74, 0.2); color: #16a34a; }
-.color-5 .icon-box { background: rgba(147, 51, 234, 0.2); color: #9333ea; }
-
-.card-wide {
-    grid-column: span 2;
+/* --- HABITS GRID --- */
+.habits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
 }
 
+.habit-card {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 18px;
+    padding: 22px 18px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.habit-icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.habit-card h3 {
+    font-size: 15px;
+    color: #0f2b48;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.habit-card p {
+    font-size: 12.5px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+/* --- REMINDER CARD --- */
+.reminder-card {
+    background: rgba(15, 43, 72, 0.7);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 22px;
+    padding: 40px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.reminder-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #90e0ef;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.reminder-card h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.reminder-card p {
+    font-size: 14px;
+    color: #e2e8f0;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* --- FOOTER --- */
+.site-footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 40px;
+}
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f2b48;
+    text-decoration: none;
+}
+
+.site-footer p {
+    font-size: 13px;
+    color: #475569;
+    margin: 6px 0;
+}
+
+.site-footer small {
+    font-size: 11px;
+    color: #64748b;
+}
+
+/* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
-    .points-grid {
+    .hero-section {
+        flex-direction: column;
+    }
+    .cards-grid {
         grid-template-columns: 1fr;
     }
-    .card-wide {
-        grid-column: span 1;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-    }
-    .action-hero {
-        padding: 35px 20px;
+    .habits-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

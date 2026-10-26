@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaCare | Tentang SDG 6</title>
-    <!-- Google Fonts & Font Awesome CDN -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Hubungkan ke File CSS Khusus Halaman 7 -->
+
+    <!-- Style CSS Khusus Halaman 7 & Navbar Bawaan Halaman 2/5 -->
     <link rel="stylesheet" href="../css/Adit7.css">
     <link rel="stylesheet" href="../css/halman-2.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -20,11 +20,11 @@
     </video>
     <div class="full-bg-overlay"></div>
 
-    <!-- Header / Navbar -->
+    <!-- HEADER DAN NAVIGASI (SAMA PERSIS DENGAN HALAMAN LAIN) -->
     <header class="site-header">
         <a href="../index.html" class="brand">
             <img src="../assets/Logo AquaCare_ Air Bersih untuk Semua (1).png" alt="AquaCare" class="brand-logo">
-            <span class="brand-text">
+            <span class="brand-text"></span>
         </a>
 
         <nav class="main-nav">
@@ -34,109 +34,120 @@
             <a href="halaman-4.html">Air di Rumah</a>
             <a href="halaman-5.html">Sumber Air</a>
             <a href="halaman-6.html">Mulai Aksi</a>
-            <a href="halaman-7.html"class="active">Tentang SDG 6</a>
+            <a href="halaman-7.html" class="active">Tentang SDG 6</a>
             <a href="halaman-profile.html">Profile</a>
         </nav>
     </header>
 
-    <div class="container main-content">
-        <!-- Hero Split Section -->
-        <section class="sdg-hero-split">
+    <main class="main-wrapper">
+
+        <!-- HERO SPLIT LAYOUT BARU (BEDA DENGAN HALAMAN 6) -->
+        <section class="sdg-hero-box">
             <div class="sdg-hero-text">
-                <span class="hero-badge alt-badge"><i class="fa-solid fa-earth-americas"></i> GOAL 6 GLOBAL</span>
+                <span class="eyebrow-badge"><i class="fa-solid fa-earth-americas"></i> AGENDA GLOBAL PBB</span>
                 <h1>Tentang <span>SDG 6</span></h1>
                 <p>
-                    SDG 6 (Sustainable Development Goal 6) adalah salah satu tujuan pembangunan berkelanjutan Perserikatan Bangsa-Bangsa yang berfokus pada ketersediaan dan pengelolaan air bersih serta sanitasi yang berkelanjutan bagi semua orang. Halaman ini menjelaskan hubungan website AquaCare dengan tujuan global tersebut.
+                    SDG 6 (Sustainable Development Goal 6) adalah salah satu tujuan pembangunan berkelanjutan Perserikatan Bangsa-Bangsa yang berfokus pada ketersediaan dan pengelolaan air bersih serta sanitasi yang berkelanjutan bagi semua orang.
                 </p>
             </div>
-            <div class="sdg-hero-box">
-                <i class="fa-solid fa-water-ladder sdg-big-icon"></i>
-                <div class="sdg-box-text">
-                    <h3>SDG 6 Indicator</h3>
-                    <p>Clean Water & Sanitation for All</p>
-                </div>
+            <div class="sdg-indicator-card">
+                <i class="fa-solid fa-water-ladder sdg-icon-big"></i>
+                <h3>SDG GOAL 6</h3>
+                <p>Clean Water & Sanitation</p>
             </div>
         </section>
 
-        <!-- Blockquote Highlight -->
-        <section class="quote-card alt-quote">
-            <div class="quote-icon-bg"><i class="fa-solid fa-hands-holding-water"></i></div>
+        <!-- KUTIPAN HIGHLIGHT TENTANG SDG 6 -->
+        <section class="quote-glass-card">
+            <div class="quote-icon"><i class="fa-solid fa-hands-holding-water"></i></div>
             <p>
-                “Air bersih dan sanitasi yang layak merupakan kebutuhan dasar setiap manusia. Melalui SDG 6, Perserikatan Bangsa-Bangsa mendorong tercapainya akses air minum yang aman, sanitasi yang layak, serta pengelolaan sumber daya air secara berkelanjutan. AquaCare hadir sebagai media edukasi untuk meningkatkan kesadaran masyarakat mengenai pentingnya menjaga air bersih dan menerapkan kebiasaan yang mendukung tujuan tersebut.”
+                “Air bersih dan sanitasi yang layak merupakan kebutuhan dasar setiap manusia. Melalui SDG 6, PBB mendorong tercapainya akses air minum yang aman, sanitasi yang layak, serta pengelolaan sumber daya air secara berkelanjutan bagi seluruh masyarakat dunia.”
             </p>
         </section>
 
-        <!-- Vertical Timeline Layout -->
+        <!-- LAYOUT TIMELINE VERTIKAL UNTUK TARGET UTAMA (BEDA DARI GRID HALAMAN 6) -->
         <section class="timeline-section">
-            <div class="section-header-center">
-                <span class="sub-title">PILAR UTAMA</span>
-                <h2>Cakupan & Fokus <span>Tujuan Global</span></h2>
-                <div class="title-line"></div>
+            <div class="section-heading text-center">
+                <span class="section-label">01 — CAKUPAN GLOBAL</span>
+                <h2>4 Pilar Target Utama SDG 6</h2>
             </div>
 
             <div class="timeline-wrapper">
+                <!-- Item Timeline 1 -->
                 <div class="timeline-item">
                     <div class="timeline-badge"><i class="fa-solid fa-glass-water"></i></div>
-                    <div class="timeline-content">
-                        <h3>Akses Air Minum Safe & Terjangkau</h3>
-                        <ul class="card-list">
+                    <div class="timeline-card">
+                        <span class="step-num">TARGET 6.1 & 6.2</span>
+                        <h3>Air Minum & Sanitasi Layak</h3>
+                        <ul class="action-list">
                             <li>Memastikan akses universal terhadap air minum yang aman dan higienis.</li>
-                            <li>Menjamin ketersediaan air bersih yang terjangkau bagi seluruh lapisan masyarakat.</li>
-                            <li>Menjaga kualitas sumber air minum dari kontaminasi bakteri dan limbah berbahaya.</li>
+                            <li>Menjamin ketersediaan air bersih yang terjangkau untuk seluruh lapisan masyarakat.</li>
+                            <li>Menyediakan fasilitas sanitasi memadai dan menghentikan BABS.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-badge"><i class="fa-solid fa-toilet"></i></div>
-                    <div class="timeline-content">
-                        <h3>Sanitasi & Kebersihan Layak</h3>
-                        <ul class="card-list">
-                            <li>Menyediakan fasilitas sanitasi dan tempat cuci tangan yang memadai.</li>
-                            <li>Memutus rantai penularan penyakit melalui peningkatan kebersihan lingkungan.</li>
-                            <li>Memperhatikan kebutuhan khusus perempuan dan kelompok rentan terkait sanitasi.</li>
-                        </ul>
-                    </div>
-                </div>
-
+                <!-- Item Timeline 2 -->
                 <div class="timeline-item">
                     <div class="timeline-badge"><i class="fa-solid fa-filter-circle-xmark"></i></div>
-                    <div class="timeline-content">
-                        <h3>Pengurangan Pencemaran Air</h3>
-                        <ul class="card-list">
+                    <div class="timeline-card">
+                        <span class="step-num">TARGET 6.3</span>
+                        <h3>Kualitas Air & Pengolahan Limbah</h3>
+                        <ul class="action-list">
                             <li>Mengurangi pembuangan limbah beracun dan zat kimia ke perairan umum.</li>
-                            <li>Mengoptimalkan pengelolaan dan pengolahan air limbah rumah tangga maupun industri.</li>
-                            <li>Daur ulang dan pemanfaatan kembali air yang aman untuk lingkungan.</li>
+                            <li>Mengoptimalkan pengolahan air limbah rumah tangga maupun industri.</li>
+                            <li>Meningkatkan daur ulang air yang aman untuk lingkungan.</li>
                         </ul>
                     </div>
                 </div>
 
+                <!-- Item Timeline 3 -->
                 <div class="timeline-item">
                     <div class="timeline-badge"><i class="fa-solid fa-tree"></i></div>
-                    <div class="timeline-content">
+                    <div class="timeline-card">
+                        <span class="step-num">TARGET 6.6</span>
                         <h3>Perlindungan Ekosistem Air</h3>
-                        <ul class="card-list">
-                            <li>Melindungi dan memulihkan ekosistem terkait air seperti sungai, danau, dan mata air.</li>
+                        <ul class="action-list">
+                            <li>Melindungi dan memulihkan ekosistem terkait air seperti sungai dan mata air.</li>
                             <li>Menjaga keanekaragaman hayati perairan dari kerusakan lingkungan.</li>
                             <li>Mengelola sumber daya air secara terpadu di semua tingkatan.</li>
                         </ul>
                     </div>
                 </div>
 
+                <!-- Item Timeline 4 -->
                 <div class="timeline-item">
                     <div class="timeline-badge"><i class="fa-solid fa-users-gear"></i></div>
-                    <div class="timeline-content">
+                    <div class="timeline-card">
+                        <span class="step-num">TARGET 6.B</span>
                         <h3>Peran Serta Masyarakat</h3>
-                        <ul class="card-list">
+                        <ul class="action-list">
                             <li>Memperkuat partisipasi masyarakat lokal dalam pengelolaan air dan sanitasi.</li>
-                            <li>Meningkatkan kesadaran kolektif untuk menggunakan air secara bijak sehari-hari.</li>
-                            <li>Mendorong kolaborasi antara individu, kampus, dan pemerintah demi tercapainya target SDG 6.</li>
+                            <li>Meningkatkan kesadaran kolektif untuk menggunakan air secara bijak.</li>
+                            <li>Mendorong kolaborasi individu, kampus, dan pemerintah demi target global.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
+
+        <!-- AJAKAN / REMINDER -->
+        <section class="reminder-card-alt">
+            <span class="reminder-label">KONTRIBUSI KITA</span>
+            <h2>Dukung Terwujudnya SDG 6 Bersama AquaCare</h2>
+            <p>
+                Setiap tindakan kecil Anda di rumah, tempat kerja, maupun kampus dalam menjaga kebersihan air adalah langkah nyata mendukung terwujudnya tujuan pembangunan berkelanjutan dunia.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <a href="../index.html" class="footer-logo">AquaCare</a>
+        <p>Air Bersih untuk Semua, Dimulai dari Kita.</p>
+        <small>© 2026 AquaCare | Edukasi Air Bersih dan Sanitasi Layak</small>
+    </footer>
 
 </body>
 </html>

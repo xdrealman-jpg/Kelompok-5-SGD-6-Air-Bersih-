@@ -1,0 +1,1239 @@
+
+/* ==========================================
+   AQUACARE - HALAMAN 4
+   ========================================== */
+
+   :root {
+    --blue: #087cc4;
+    --navy: #10285c;
+    --ocean: #1590d0;
+    --sky: #71c7f2;
+    --forest: #17684d;
+    --green: #24a66a;
+    --mint: #bce8d0;
+    --white: #ffffff;
+    --cloud: #f8fafc;
+    --ice: #eaf7fd;
+    --border: #d4e6f3;
+    --text: #24364b;
+    --muted: #65768b;
+    --yellow: #fff3cc;
+    --red: #d64545;
+    --shadow: 0 8px 25px rgba(16, 40, 92, 0.08);
+}
+
+/* FONT SELURUH WEBSITE */
+html,
+body,
+button,
+input,
+textarea,
+select {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.7;
+}
+
+/* Pastikan elemen teks mengikuti font Arial */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+small,
+strong,
+li,
+button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    min-height: 76px;
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.98);
+    border-bottom: 1px solid #e8f0f6;
+    box-shadow: 0 3px 15px rgba(16, 40, 92, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* LOGO FOTO */
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-image {
+    display: block;
+    width: 150px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* NAVIGASI */
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 4px;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px 10px;
+    color: var(--navy);
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+nav ul li a:hover {
+    color: var(--blue);
+    background: var(--ice);
+}
+
+nav ul li a.active {
+    color: var(--white);
+    background: var(--green);
+}
+
+/* HERO */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 38px;
+    padding: 48px 7%;
+    background:
+        radial-gradient(
+            circle at 5% 15%,
+            rgba(188, 232, 208, 0.45),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #f5fbff,
+            #ffffff 60%,
+            #eaf8f0
+        );
+    overflow: hidden;
+}
+
+.hero-content {
+    min-width: 0;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #eaf7fd;
+    box-shadow: var(--shadow);
+}
+
+/* VIDEO BERGERAK */
+.hero-image video.hero-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 0;
+    border-radius: inherit;
+}
+
+/* KETERANGAN DI ATAS VIDEO */
+.image-caption {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 5px 20px rgba(16, 40, 92, 0.10);
+}
+
+.image-caption > span {
+    flex-shrink: 0;
+    font-size: 25px;
+}
+
+.image-caption strong {
+    display: block;
+    color: var(--forest);
+    font-size: 14px;
+}
+
+.image-caption small {
+    display: block;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 768px) {
+    .hero-image {
+        height: 280px;
+    }
+}
+
+.eyebrow,
+.section-label,
+.reminder-label {
+    display: inline-block;
+    margin-bottom: 9px;
+    color: var(--green);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+}
+
+.hero h1 {
+    margin-bottom: 15px;
+    color: var(--navy);
+    font-size: clamp(32px, 3.5vw, 46px);
+    line-height: 1.16;
+    letter-spacing: -1.2px;
+}
+
+.hero h1 span {
+    color: var(--blue);
+}
+
+.hero-content > p {
+    max-width: 500px;
+    margin-bottom: 20px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+/* TOMBOL */
+
+.btn-primary,
+.btn-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 17px;
+    border-radius: 25px;
+    font-size: 11px;
+    font-weight: 700;
+    transition: 0.25s;
+}
+
+.btn-primary {
+    color: var(--white);
+    background: var(--blue);
+    box-shadow: 0 6px 16px rgba(8, 124, 196, 0.18);
+}
+
+.btn-primary:hover {
+    background: var(--navy);
+    transform: translateY(-2px);
+}
+
+/* CATATAN HERO */
+
+.hero-note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 390px;
+    margin-top: 22px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #d9eee3;
+    border-radius: 12px;
+}
+
+.note-icon {
+    flex-shrink: 0;
+    font-size: 26px;
+}
+
+.hero-note div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-note strong {
+    color: var(--forest);
+    font-size: 10px;
+}
+
+.hero-note small {
+    color: var(--muted);
+    font-size: 9px;
+}
+
+/* GAMBAR HERO */
+
+.hero-image {
+    position: relative;
+    min-width: 0;
+}
+
+.hero-image > img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(16, 40, 92, 0.14);
+}
+
+.image-badge {
+    position: absolute;
+    bottom: 14px;
+    left: -16px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.image-badge > span {
+    flex-shrink: 0;
+    font-size: 25px;
+}
+
+.image-badge strong {
+    color: var(--forest);
+    font-size: 10px;
+}
+
+.image-badge p {
+    color: var(--muted);
+    font-size: 9px;
+}
+
+/* SECTION */
+
+.section {
+    padding: 45px 7%;
+}
+
+.section-heading {
+    margin-bottom: 22px;
+}
+
+.section-label {
+    margin-bottom: 5px;
+    color: var(--blue);
+}
+
+.section-heading h2 {
+    margin-bottom: 6px;
+    color: var(--navy);
+    font-size: clamp(23px, 2.5vw, 29px);
+    line-height: 1.35;
+}
+
+.section-heading p {
+    max-width: 650px;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+/* KARTU TIPS */
+
+.tips-section {
+    background: var(--white);
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.tip-card {
+    min-width: 0;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.tip-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.tip-card > img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+}
+
+.tip-content {
+    padding: 14px 12px 17px;
+}
+
+.tip-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 9px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.tip-icon.blue {
+    background: var(--ice);
+}
+
+.tip-icon.green {
+    background: #e6f7ed;
+}
+
+.tip-icon.red {
+    background: #fff0f0;
+}
+
+.tip-content h3 {
+    margin-bottom: 7px;
+    color: var(--navy);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.tip-content p {
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+/* PENGINGAT */
+
+.reminder {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 7% 45px;
+    padding: 27px 30px;
+    background: linear-gradient(110deg, #eaf8f0, #f0faff);
+    border: 1px solid #d5ede1;
+    border-radius: 18px;
+}
+
+.reminder-icon {
+    flex-shrink: 0;
+    font-size: 38px;
+}
+
+.reminder-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.reminder-label {
+    margin-bottom: 5px;
+    color: var(--forest);
+}
+
+.reminder h2 {
+    margin-bottom: 6px;
+    color: var(--navy);
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.reminder p {
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.btn-light {
+    flex-shrink: 0;
+    color: var(--white);
+    background: var(--green);
+}
+
+.btn-light:hover {
+    background: var(--forest);
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 6%;
+    text-align: center;
+    background: #f1f8fc;
+    border-top: 1px solid var(--border);
+}
+
+.footer-logo {
+    color: var(--navy);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.site-footer p {
+    margin: 5px 0 9px;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.site-footer small {
+    color: #8493a5;
+    font-size: 9px;
+}
+
+/* RESPONSIVE TABLET */
+
+@media (max-width: 1050px) {
+    header {
+        padding: 12px 4%;
+        gap: 10px;
+    }
+
+    .logo-image {
+        width: 95px;
+        height: 42px;
+    }
+
+    nav ul {
+        gap: 2px;
+    }
+
+    nav ul li a {
+        padding: 7px;
+        font-size: 10px;
+    }
+
+    .hero {
+        padding: 42px 5%;
+        gap: 25px;
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+
+    .tips-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .tip-card > img {
+        height: 155px;
+    }
+
+    .reminder {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width: 760px) {
+    header {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 5%;
+        gap: 12px;
+    }
+
+    .logo-image {
+        width: 90px;
+        height: 38px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    nav ul li a {
+        padding: 7px 9px;
+        font-size: 10px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 35px 6% 42px;
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-image > img {
+        height: 260px;
+    }
+
+    .image-badge {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .section {
+        padding: 38px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .tips-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .tip-card > img {
+        height: 150px;
+    }
+
+    .reminder {
+        flex-wrap: wrap;
+        margin: 0 5% 35px;
+        padding: 23px;
+        gap: 14px;
+    }
+
+    .reminder-icon {
+        font-size: 32px;
+    }
+
+    .reminder-content {
+        flex-basis: calc(100% - 55px);
+    }
+
+    .reminder h2 {
+        font-size: 20px;
+    }
+
+    .btn-light {
+        margin-left: 46px;
+    }
+}
+
+/* HP KECIL */
+
+@media (max-width: 420px) {
+    .logo-image {
+        width: 80px;
+        height: 34px;
+    }
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
+    .hero-content > p {
+        font-size: 11px;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tip-card > img {
+        height: 200px;
+    }
+
+    .section-heading h2 {
+        font-size: 23px;
+    }
+
+    .reminder-content {
+        flex-basis: 100%;
+    }
+
+    .btn-light {
+        margin-left: 0;
+    }
+}
+
+
+.hero h1 {
+    margin-bottom: 15px;
+    color: var(--navy);
+    font-size: clamp(32px, 3.5vw, 46px);
+    line-height: 1.16;
+    letter-spacing: -1.2px;
+}
+
+.hero h1 span {
+    color: var(--blue);
+}
+
+.hero-content > p {
+    max-width: 500px;
+    margin-bottom: 20px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+/* TOMBOL UTAMA */
+.btn-primary,
+.btn-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 17px;
+    border-radius: 25px;
+    font-size: 11px;
+    font-weight: 700;
+    transition: all 0.25s ease;
+}
+
+.btn-primary {
+    color: var(--white);
+    background: var(--blue);
+    box-shadow: 0 6px 16px rgba(8, 124, 196, 0.18);
+}
+
+.btn-primary:hover {
+    background: var(--navy);
+    transform: translateY(-2px);
+}
+
+/* CATATAN HERO */
+.hero-note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 390px;
+    margin-top: 22px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #d9eee3;
+    border-radius: 12px;
+}
+
+.note-icon {
+    flex-shrink: 0;
+    font-size: 26px;
+}
+
+.hero-note div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-note strong {
+    color: var(--forest);
+    font-size: 10px;
+}
+
+.hero-note small {
+    color: var(--muted);
+    font-size: 9px;
+}
+
+/* GAMBAR HERO */
+.hero-image {
+    position: relative;
+    min-width: 0;
+}
+
+.hero-image > img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(16, 40, 92, 0.14);
+}
+
+/* LABEL DI ATAS GAMBAR */
+.image-badge {
+    position: absolute;
+    bottom: 14px;
+    left: -16px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.image-badge > span {
+    flex-shrink: 0;
+    font-size: 25px;
+}
+
+.image-badge strong {
+    color: var(--forest);
+    font-size: 10px;
+}
+
+.image-badge p {
+    color: var(--muted);
+    font-size: 9px;
+}
+
+/* ==========================================
+   SECTION UMUM
+   ========================================== */
+
+.section {
+    padding: 45px 7%;
+}
+
+.section-heading {
+    margin-bottom: 22px;
+}
+
+.section-label {
+    margin-bottom: 5px;
+    color: var(--blue);
+}
+
+.section-heading h2 {
+    margin-bottom: 6px;
+    color: var(--navy);
+    font-size: clamp(23px, 2.5vw, 29px);
+    line-height: 1.35;
+}
+
+.section-heading p {
+    max-width: 650px;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   KARTU TIPS KEBERSIHAN AIR
+   ========================================== */
+
+.tips-section {
+    background: var(--white);
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.tip-card {
+    min-width: 0;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.tip-card > img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover > img {
+    transform: scale(1.03);
+}
+
+.tip-content {
+    padding: 14px 12px 17px;
+}
+
+.tip-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 9px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.tip-icon.blue {
+    background: var(--ice);
+}
+
+.tip-icon.green {
+    background: #e6f7ed;
+}
+
+.tip-icon.red {
+    background: #fff0f0;
+}
+
+.tip-content h3 {
+    margin-bottom: 7px;
+    color: var(--navy);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.tip-content p {
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   BAGIAN PENGINGAT
+   ========================================== */
+
+.reminder {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 7% 45px;
+    padding: 27px 30px;
+    background: linear-gradient(110deg, #eaf8f0, #f0faff);
+    border: 1px solid #d5ede1;
+    border-radius: 18px;
+}
+
+.reminder-icon {
+    flex-shrink: 0;
+    font-size: 38px;
+}
+
+.reminder-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.reminder-label {
+    margin-bottom: 5px;
+    color: var(--forest);
+}
+
+.reminder h2 {
+    margin-bottom: 6px;
+    color: var(--navy);
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.reminder p {
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.btn-light {
+    flex-shrink: 0;
+    color: var(--white);
+    background: var(--green);
+}
+
+.btn-light:hover {
+    background: var(--forest);
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 6%;
+    text-align: center;
+    background: #f1f8fc;
+    border-top: 1px solid var(--border);
+}
+
+.footer-logo {
+    color: var(--navy);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.site-footer p {
+    margin: 5px 0 9px;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.site-footer small {
+    color: #8493a5;
+    font-size: 9px;
+}
+
+/* ==========================================
+   RESPONSIVE TABLET
+   ========================================== */
+
+@media (max-width: 1050px) {
+    header {
+        padding: 12px 4%;
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 2px;
+    }
+
+    nav ul li a {
+        padding: 7px;
+        font-size: 10px;
+    }
+
+    .hero {
+        padding: 42px 5%;
+        gap: 25px;
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+
+    .tips-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .tip-card > img {
+        height: 155px;
+    }
+
+    .reminder {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE HP
+   ========================================== */
+
+@media (max-width: 760px) {
+    header {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 5%;
+        gap: 12px;
+    }
+
+    .logo-image {
+        width: 32px;
+        height: 32px;
+    }
+
+    .logo-text strong {
+        font-size: 19px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    nav ul li a {
+        padding: 7px 9px;
+        font-size: 10px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 35px 6% 42px;
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-image > img {
+        height: 260px;
+    }
+
+    .image-badge {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .section {
+        padding: 38px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .tips-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .tip-card > img {
+        height: 150px;
+    }
+
+    .tip-content {
+        padding: 13px;
+    }
+
+    .reminder {
+        flex-wrap: wrap;
+        margin: 0 5% 35px;
+        padding: 23px;
+        gap: 14px;
+    }
+
+    .reminder-icon {
+        font-size: 32px;
+    }
+
+    .reminder-content {
+        flex-basis: calc(100% - 55px);
+    }
+
+    .reminder h2 {
+        font-size: 20px;
+    }
+
+    .btn-light {
+        margin-left: 46px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE HP KECIL
+   ========================================== */
+
+@media (max-width: 420px) {
+    .logo-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo-text strong {
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
+    .hero-content > p {
+        font-size: 11px;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tip-card > img {
+        height: 200px;
+    }
+
+    .section-heading h2 {
+        font-size: 23px;
+    }
+
+    .reminder {
+        align-items: flex-start;
+    }
+
+    .reminder-content {
+        flex-basis: 100%;
+    }
+
+    .btn-light {
+        margin-left: 0;
+    }
+}

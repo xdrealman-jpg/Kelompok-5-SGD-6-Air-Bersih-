@@ -83,7 +83,7 @@ Halaman ini mendorong pengunjung untuk berpartisipasi dalam menjaga ketersediaan
 
 | Jenis Materi | Sumber |
 |---|---|
-| `1023.mp4` | Sumber atau keterangan pembuat video perlu dikonfirmasi |
+| `1023.mp4` | https://share.google/cubVf9aRhAYpTVZd9 |
 | Ikon | [Font Awesome](https://fontawesome.com/) jika ikon dari layanan ini digunakan |
 
 ### 3.7 Tentang SDG 6 (`halaman-7.html`)
@@ -93,7 +93,7 @@ Halaman ini menjelaskan tujuan SDG 6 dan pentingnya akses terhadap air bersih se
 | Jenis Materi | Sumber |
 |---|---|
 | Referensi SDG 6 | [United Nations — Goal 6](https://sdgs.un.org/goals/goal6) |
-| `1023.mp4` | Sumber atau keterangan pembuat video perlu dikonfirmasi |
+| `1023.mp4` | https://share.google/cubVf9aRhAYpTVZd9 |
 
 **Catatan:** Referensi PBB di atas merupakan sumber informasi pendukung tentang SDG 6. Referensi tersebut tidak otomatis menjadi sumber seluruh isi halaman.
 

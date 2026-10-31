@@ -466,24 +466,7 @@ img {
 /* RESPONSIVE TABLET */
 
 @media (max-width: 1050px) {
-    header {
-        padding: 12px 4%;
-        gap: 10px;
-    }
 
-    .logo-image {
-        width: 95px;
-        height: 42px;
-    }
-
-    nav ul {
-        gap: 2px;
-    }
-
-    nav ul li a {
-        padding: 7px;
-        font-size: 10px;
-    }
 
     .hero {
         padding: 42px 5%;
@@ -511,31 +494,6 @@ img {
 /* RESPONSIVE HP */
 
 @media (max-width: 760px) {
-    header {
-        position: relative;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 14px 5%;
-        gap: 12px;
-    }
-
-    .logo-image {
-        width: 90px;
-        height: 38px;
-    }
-
-    nav {
-        width: 100%;
-    }
-
-    nav ul {
-        justify-content: flex-start;
-    }
-
-    nav ul li a {
-        padding: 7px 9px;
-        font-size: 10px;
-    }
 
     .hero {
         grid-template-columns: 1fr;

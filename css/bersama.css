@@ -98,8 +98,8 @@
 }
 
 .site-footer h3{
-    font-size:28px;
-    font-weight:500;
+    font-size:20px;
+    font-weight:400;
     margin-bottom:10px;
 }
 
@@ -177,7 +177,7 @@
         left:25px;
         bottom:0;
 
-        width:120px;      /* panjang garis */
+        width:250px;      /* panjang garis */
         height:3px;
 
         background:#2f80d1;

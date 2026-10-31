@@ -6,23 +6,6 @@
 @media (max-width:768px){
 
     /* =========================
-       HEADER
-    ========================= */
-
-    header{
-
-        height:85px;
-        padding:0 5%;
-
-    }
-
-    .logo img{
-
-        height:48px;
-
-    }
-
-    /* =========================
        HERO
     ========================= */
 
@@ -167,78 +150,6 @@
 
     }
 
-    /* =========================
-    hamburger menu
-    ========================= */
-
-    .hamburger{
-
-        display:block;
-
-    }
-
-    nav{
-
-        position: fixed;
-
-        top: 85px;
-        right: 0;
-
-        width: 60%;
-        height: auto;
-
-        background: white;
-
-        transform: translateX(100%);
-
-        transition: transform .35s ease;
-
-        z-index: 999;
-
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-
-    }
-
-    nav.active{
-
-        transform:translateX(0);
-
-    }
-
-    nav ul{
-
-        width:100%;
-
-        display:flex;
-
-        flex-direction:column;
-
-        gap:0;
-
-        padding:20px 0;
-
-    }
-
-    nav ul li{
-
-        width:100%;
-
-    }
-
-    nav ul li a{
-
-        display:block;
-
-        padding:18px;
-
-        color:#222;
-
-        text-align:center;
-
-    }
-
 }
 
 /* ===================================================
@@ -247,23 +158,6 @@
 =================================================== */
 
 @media (max-width:375px){
-
-    /* =========================
-       HEADER
-    ========================= */
-
-    header{
-
-        height:75px;
-        padding:0 20px;
-
-    }
-
-    .logo img{
-
-        height:42px;
-
-    }
 
     /* =========================
        HERO
@@ -413,16 +307,6 @@
     .parallax-content p{
 
         font-size:15px;
-
-    }
-
-    /* =========================
-    NAVBAR hamburger
-    ========================= */
-
-    nav{
-
-        top:75px;
 
     }
 

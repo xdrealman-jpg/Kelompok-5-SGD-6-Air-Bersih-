@@ -1,26 +1,21 @@
-const navbar = document.querySelector("header");
-
-window.addEventListener("scroll", () => {
-
-    if (window.scrollY >= 150) {
-        navbar.classList.add("sticky");
-    } else {
-        navbar.classList.remove("sticky");
-    }
-
-});
-
 const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector("nav");
+const navbar = document.querySelector(".site-navbar");
+const navLinks = document.querySelectorAll(".site-navbar a");
 
 hamburger.addEventListener("click", () => {
-    nav.classList.toggle("active");
-    hamburger.classList.toggle("active");
+
+    navbar.classList.toggle("active");
+    hamburger.innerHTML = navbar.classList.contains("active") ? "✕" : "☰";
+
 });
 
-document.querySelectorAll("nav a").forEach(link => {
+navLinks.forEach(link => {
+
     link.addEventListener("click", () => {
-        nav.classList.remove("active");
-        hamburger.classList.remove("active");
+
+        navbar.classList.remove("active");
+        hamburger.innerHTML = "☰";
+
     });
+
 });
